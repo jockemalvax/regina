@@ -185,8 +185,143 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  position:relative;
     width: 100%;
 }
+#div-headline-center {
+font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ font-weight:bold;
+ font-size:45px;	
+ text-align:center;
+ color:#8bc34a;
+ position:relative;
+ top:40px;
+ left:10px;
+ width:100%;
+ height: 25px;
+ padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+}
+#div-headline-center-small {
+font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ font-weight:bold;
+ font-size:30px;	
+ font-style:italic;
+ text-align:center;
+ color:#000000;
+ position:relative;
+ top:30px;
+ left:10px;
+ width:100%;
+ height: 25px;
+ padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+}
+.form-style-6{
+    font: Arial, Helvetica, sans-serif;
+	font-size:23px;
+	text-align:center;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #ffffff;
+}
+.form-style-6 h1{
+    background: #8bc34a;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #8bc34a;
+    padding: 3%;
+    border: 1px solid #8bc34a;
+}
+.form-style-6 select {
+    font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+    background: rgba(255,255,255,.1);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 22px;
+    margin: 0;
+    outline: 0;
+    padding: 3%;
+    width: 100%;
+	
+    font-size: 140%;
+    font-weight: 300;
+	
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #ffffff;
+    color:#555;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+	
+    
+}
 
-
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #8bc34a;
+    border-bottom: 2px solid #8bc34a;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #8bc34a;
+}
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -222,6 +357,45 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     <p id="text_row_btn"><img src="pix/download_appstore.png" width="150" height="47"> <img id="appstore_btn" src="pix/download_googleplay.png" width="160" height="45"></p>
   </div>
   <div id="div-1a"><img style="padding-left:75px;" src="pix/regina_android_iphone_apps.png" width="375" height="399"></div>
+</div>
+
+ <!-- Rotating text -->
+<div id="div-placeholder">
+ <div id="div-headline-center">HAR GRANNEN DUBBELPARKERAT?
+ </div>
+  <div id="div-headline-center-small">- berätta för honom via formuläret nedan!
+ </div>
+ </div>
+ 
+ <!-- Form -->
+ <div id="div-placeholder">
+ <div class="form-style-6">
+<form>
+<input type="text" name="field1" placeholder="Fyll i reg. nummer ex: ABC123" />
+
+<select id="job" name="field4">
+<optgroup label="Indoors">
+  <option value="fishkeeping">Fishkeeping</option>
+  <option value="reading">Reading</option>
+  <option value="boxing">Boxing</option>
+  <option value="debate">Debate</option>
+  <option value="gaming">Gaming</option>
+  <option value="snooker">Snooker</option>
+  <option value="other_indoor">Other</option>
+</optgroup>
+<optgroup label="Outdoors">
+  <option value="football">Football</option>
+  <option value="swimming">Swimming</option>
+  <option value="fishing">Fishing</option>
+  <option value="climbing">Climbing</option>
+  <option value="cycling">Cycling</option>
+  <option value="other_outdoor">Other</option>
+</optgroup>
+</select>   
+
+<input type="submit" value="Skicka" />
+</form>
+</div>
 </div>
 
  <!-- Why Regina section -->
