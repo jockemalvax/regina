@@ -6,6 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Light Theme</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.1.0.js"></script>
+<script src="typed/js/typed.js"></script>
+<script>
+ $(function(){
+        $(".element").typed({
+            strings: ["Har grannen dubbelparkerat?", "Säg till fartdåren att sluta köra fort där du bor!", "Skicka en smiley till den blåa BNW:n", "Vem har bilen? Fråga familjen!", "Meddela en bekant att de glömt stänga av ljustet!", "Berätta för grannen att hans billarm är igång!", "Skicka ett tack för att du fick sista p-platsen!"],
+            typeSpeed: 10,
+			backSpeed: 20
+        });
+    });
+</script>
 <style type="text/css">
 .container header div a {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -29,8 +40,6 @@ a:active {
 .container #about div p {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-
-
 #div-1 {
  position:relative;
  top:25px;
@@ -181,10 +190,6 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  left:0;
  width:100%;
 }
-#div-11 {
- position:relative;
-    width: 100%;
-}
 #div-headline-center {
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
@@ -205,9 +210,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
  font-size:30px;	
- font-style:italic;
  text-align:center;
- color:#000000;
+ color:#555;
  position:relative;
  top:30px;
  left:10px;
@@ -237,71 +241,39 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     margin: -16px -16px 16px -16px;
 }
 .form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
-.form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
-.form-style-6 textarea,
 .form-style-6 select 
 {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
-    outline: none;
+    -webkit-border-radius: 5px;
+    outline:none;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
     background: #fff;
     margin-bottom: 4%;
-    border: 1px solid #ccc;
+    border: 1px solid #8bc34a;
     padding: 3%;
     color: #555;
+	height:50px;
     font: 95% Arial, Helvetica, sans-serif;
+	 
 }
 .form-style-6 input[type="text"]:focus,
-.form-style-6 input[type="date"]:focus,
-.form-style-6 input[type="datetime"]:focus,
-.form-style-6 input[type="email"]:focus,
-.form-style-6 input[type="number"]:focus,
-.form-style-6 input[type="search"]:focus,
-.form-style-6 input[type="time"]:focus,
-.form-style-6 input[type="url"]:focus,
-.form-style-6 textarea:focus,
 .form-style-6 select:focus
 {
     box-shadow: 0 0 5px #8bc34a;
     padding: 3%;
     border: 1px solid #8bc34a;
 }
-.form-style-6 select {
-    font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
-    background: rgba(255,255,255,.1);
+.form-style-6 select:disabled
+{
+    box-shadow: 0 0 5px #ccc;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 22px;
-    margin: 0;
-    outline: 0;
-    padding: 3%;
-    width: 100%;
-	
-    font-size: 140%;
-    font-weight: 300;
-	
-    box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box; 
-    background-color: #ffffff;
-    color:#555;
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-	
-    
+	color: #ccc;
 }
 
 .form-style-6 input[type="submit"],
@@ -322,6 +294,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 .form-style-6 input[type="button"]:hover{
     background: #8bc34a;
 }
+
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -333,7 +306,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body onLoad="reg_number.focus();">
 <!-- Main Container -->
 <div class="container"> 
   <!-- Navigation -->
@@ -361,19 +334,18 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
  <!-- Rotating text -->
 <div id="div-placeholder">
- <div id="div-headline-center">HAR GRANNEN DUBBELPARKERAT?
- </div>
-  <div id="div-headline-center-small">- berätta för honom via formuläret nedan!
- </div>
+ <div id="div-headline-center">SKICKA TEXT MED FORMULÄRET!</div>
+  <div id="div-headline-center-small" class="element"></div>
  </div>
  
  <!-- Form -->
  <div id="div-placeholder">
  <div class="form-style-6">
 <form>
-<input type="text" name="field1" placeholder="Fyll i reg. nummer ex: ABC123" />
+<input id="reg_number" type="text" name="field1" placeholder="Fyll i reg. nummer ex: ABC123" />
 
-<select id="job" name="field4">
+<select id="job" name="field4" disabled>
+<option value="0" selected>Välj meddelande</option>
 <optgroup label="Indoors">
   <option value="fishkeeping">Fishkeeping</option>
   <option value="reading">Reading</option>
