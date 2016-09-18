@@ -7,7 +7,7 @@
 <title>Light Theme</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
-<script src="typed/js/typed.js"></script>
+<script src="js/typed.js"></script>
 <script>
  $(function(){
         $(".element").typed({
