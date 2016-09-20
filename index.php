@@ -4,18 +4,45 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Light Theme</title>
+<title>Regina sverige</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
 <script src="js/typed.js"></script>
 <script>
+$(document).ready(function(){
+ 
  $(function(){
         $(".element").typed({
-            strings: ["Har grannen dubbelparkerat?", "Säg till fartdåren att sluta köra fort där du bor!", "Skicka en smiley till den blåa BNW:n", "Vem har bilen? Fråga familjen!", "Meddela en bekant att de glömt stänga av ljustet!", "Berätta för grannen att hans billarm är igång!", "Skicka ett tack för att du fick sista p-platsen!"],
+            strings:
+			[
+			"@ODT401 Din bil är parkerad med lyktorna tända - risk för batteriproblem", 
+			"@HMN338 P-lisor på gatan där din bil är parkerad!", 
+			"@MBO053 Tack, du är en ängel", 
+			"@KGZ342 Vad har du så bråttom till att du riskerar mina barns liv på en 30-väg framför en skola?", 
+			"@OZA032 ”Om du blinkar vänster i en rondell fattar ingen vart du ska!", 
+			],
             typeSpeed: 10,
-			backSpeed: 20
+			backSpeed: 0
         });
     });
+	
+	$("#reg_number").keyup(function(event){
+	$(this).css("text-transform","uppercase")
+	var myLength = $("#reg_number").val().replace(/ /g, '').length;
+		if(myLength>=6)
+		{
+			 $("#job").prop('disabled', false);
+		}
+		else 
+		{
+			$("#job").prop('disabled', 'disabled');
+			  if((myLength==0))
+			{
+				$(this).css("text-transform","capitalize")
+			}
+		}
+	});
+});
 </script>
 <style type="text/css">
 .container header div a {
