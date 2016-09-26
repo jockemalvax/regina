@@ -382,57 +382,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
       
     </div>
   </header>
-  <!-- Hero Section -->
-  <div id="div-1">
-  <div id="div-1b"> 
-    <p id="text_row1">SKICKA TEXT TILL <br> BILÄGARE</p>
-    <p id="text_row2">VIA TELEFON ELLER <br> WEBBEN</p>
-    <p id="text_row_btn"><img src="pix/download_appstore.png" width="150" height="47"> <img id="appstore_btn" src="pix/download_googleplay.png" width="160" height="45"></p>
-  </div>
-  <div id="div-1a"><img style="padding-left:75px;" src="pix/regina_android_iphone_apps.png" width="375" height="399"></div>
-</div>
-
- <!-- Rotating text -->
-<div id="div-placeholder">
- <div id="div-headline-center">SKICKA TEXT MED FORMULÄRET!</div>
-  <div id="div-headline-center-small" class="element"></div>
- </div>
- 
- <!-- Form -->
- <div id="div-placeholder">
- <div class="form-style-6">
-
-<input id="reg_number" type="text" name="field1" placeholder="Fyll i reg. nummer ex: ABC123" />
-
-<select id="job" name="field4" disabled>
-<option value="0" selected>Välj meddelande</option>
-<optgroup label="Indoors">
-  <option value="fishkeeping">Fishkeeping</option>
-  <option value="reading">Reading</option>
-  <option value="boxing">Boxing</option>
-  <option value="debate">Debate</option>
-  <option value="gaming">Gaming</option>
-  <option value="snooker">Snooker</option>
-  <option value="other_indoor">Other</option>
-</optgroup>
-<optgroup label="Outdoors">
-  <option value="football">Football</option>
-  <option value="swimming">Swimming</option>
-  <option value="fishing">Fishing</option>
-  <option value="climbing">Climbing</option>
-  <option value="cycling">Cycling</option>
-  <option value="other_outdoor">Other</option>
-</optgroup>
-</select>   
-
-<div id="loader" style="display:none;"><img src="pix/loader.gif"></div>
-<input id="push_message" type="submit" value="Skicka" />
-<div id="postlist"></div>
-
-</div>
-</div>
-
- <!-- Why Regina section -->
+  <!-- Hero Section --><!-- Rotating text --><!-- Form --><!-- Why Regina section -->
 <div id="div-placeholder">
  <div id="div-greenline">
  </div>
