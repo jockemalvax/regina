@@ -30,6 +30,7 @@ $(document).ready(function(){
                 data:'reg_number='+reg_number+'&text_to_push='+text_to_push,
                 beforeSend:function(html){
                     $("#loader").show();
+					$('#postlist').text('');
                 },
                 success:function(html){
                        $("#loader").remove();

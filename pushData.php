@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
+date_default_timezone_set('Europe/Stockholm');
 
 if((isset($_POST["reg_number"]) && !empty($_POST["reg_number"])) && (isset($_POST["text_to_push"]) && !empty($_POST["text_to_push"]))){
 
@@ -10,11 +11,13 @@ include('../db_no_git/regina_dbConfig.php');
 //Get last ID
 $reg_number = $_POST["reg_number"];
 $text_to_push = $_POST["text_to_push"];
+$date= new DateTime('NOW');
+$date_to_push = $date->format('Y-m-d H:i:s');
 
+//$insert_row = $db->query("INSERT INTO message_que (M_Reg_number, M_Text_to_send) VALUES('".$reg_number."','".$text_to_push."')");
 
-$insert_row = $db->query("INSERT INTO message_que (M_Reg_number, M_Text_to_send) VALUES('".$reg_number."','".$text_to_push."')");
+$insert_row = $db->query("INSERT INTO message_que (M_Reg_number, M_Text_to_send, M_Created) VALUES('".$reg_number."','".$text_to_push."','".$date_to_push."')");
 
-    
     if($insert_row)
     {
          //Record was successfully inserted, respond result back to index page
