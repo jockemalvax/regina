@@ -22,7 +22,7 @@ $(document).ready(function(){
 		/* write function to verify properly*/
         if (reg_number.length>0 && text_to_push.length>0){
             
-			$("#text_row2").text(reg_number +" if_och " +text_to_push);
+			//$("#text_row2").text(reg_number +" if_och " +text_to_push);
 			
 			$.ajax({
                 type:'POST',
@@ -39,7 +39,7 @@ $(document).ready(function(){
         }
 		else
 		{
-			$("#text_row2").text(reg_number +" else_och " +text_to_push);
+			//$("#text_row2").text(reg_number +" else_och " +text_to_push);
 		}
     });
 

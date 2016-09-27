@@ -15,9 +15,16 @@ ini_set('display_errors', 'on');
 <script>
 
 $(document).ready(function(){
+	
+	
+      
 
-   $( "#get_message" ).click(function() {
-        var reg_number = $("#reg_number").val();
+
+   //$( "#get_message" ).click(function() {
+    $(document).keypress(function(e) {
+    if(e.which == 13) 
+	{
+	    var reg_number = $("#reg_number").val();
 		
 		/* write function to verify properly*/
         if (reg_number.length>0){
@@ -40,24 +47,12 @@ $(document).ready(function(){
 		{
 			/* Meddelande om korrekt input*/
 		}
-    });
+	}
+	});
 
 	
 	$("#reg_number").keyup(function(event){
 	$(this).css("text-transform","uppercase")
-	var myLength = $("#reg_number").val().replace(/ /g, '').length;
-		if(myLength>=6)
-		{
-			 $("#job").prop('disabled', false);
-		}
-		else 
-		{
-			$("#job").prop('disabled', 'disabled');
-			  if((myLength==0))
-			{
-				$(this).css("text-transform","capitalize")
-			}
-		}
 	});
 });
 </script>
@@ -266,6 +261,22 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     padding-bottom: 45px;
     padding-left: 15px;
 }
+#enter_text {
+font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ font-weight:bold;
+ font-size:10px;	
+ text-align:center;
+ color:#8bc34a;
+ position:fixed;
+ top:265px;
+ left:0px;
+ width:100%;
+ height: 15px;
+ padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
 .form-style-6{
     font: Arial, Helvetica, sans-serif;
 	font-size:23px;
@@ -338,6 +349,47 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 .form-style-6 input[type="button"]:hover{
     background: #8bc34a;
 }
+#result_box
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    -webkit-border-radius: 5px;
+    outline:none;
+    position:relative;
+	margin-left:200px;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 600px;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #8bc34a;
+    padding: 3%;
+    color: #555;
+	height:55px auto;
+    font: 95% Arial, Helvetica, sans-serif;
+	font-size:23px;
+	text-align:left;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 16px;
+
+	 
+}
+#enter_text_2 {
+font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ font-weight:bold;
+ font-size:10px;	
+ text-align:center;
+ color:#8bc34a;
+ position:relative;
+ top:5px;
+ left:254px;
+ width:100%;
+ 
+}
 
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
@@ -374,17 +426,19 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  
  <!-- Form -->
  <div id="div-placeholder">
- <div class="form-style-6">
+ 	<div class="form-style-6">
 
-<input id="reg_number" type="text" name="field1" placeholder="Fyll i reg. nummer ex: ABC123" />
+		<input id="reg_number" type="text" name="field1" maxlength="25" placeholder="Fyll i reg. nummer ex: ABC123" />
+		<div id="loader" style="display:none;"><img src="pix/loader.gif"></div>
 
-<div id="loader" style="display:none;"><img src="pix/loader.gif"></div>
-<input id="get_message" type="submit" value="Hämta" />
+		<div id="postlist"></div>
 
-<div id="postlist"></div>
-
+	</div>
 </div>
-</div>
+
+<!-- Search results -->
+ 
+ <div id="div-placeholder" style="height:300px;"></div>
 
  <!-- Why Regina section -->
 <div id="div-placeholder">
