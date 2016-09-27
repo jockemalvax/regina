@@ -16,13 +16,16 @@ ini_set('display_errors', 'on');
 
 $(document).ready(function(){
 
-   $( "#push_message" ).click(function() {
-        var reg_number = $("#reg_number").val();
+   //$( "#push_message" ).click(function() {
+    $(document).keypress(function(e) {
+    if(e.which == 13) 
+	{     
+		var reg_number = $("#reg_number").val();
 		var text_to_push = $("#job").val();
 		/* write function to verify properly*/
-        if (reg_number.length>0 && text_to_push.length>0){
+        if (reg_number.length>0 && text_to_push!=0){
             
-			//$("#text_row2").text(reg_number +" if_och " +text_to_push);
+			//$("#text_row2").text(reg_number +" if_och " +text_to_push + text_to_push.length);
 			
 			$.ajax({
                 type:'POST',
@@ -41,10 +44,11 @@ $(document).ready(function(){
 		{
 			//$("#text_row2").text(reg_number +" else_och " +text_to_push);
 		}
-    });
+	}ß
+	});
 
  
- $(function(){
+/* $(function(){
         $(".element").typed({
             strings:
 			[
@@ -57,10 +61,11 @@ $(document).ready(function(){
             typeSpeed: 10,
 			backSpeed: 0
         });
-    });
+    }); */
 	
 	$("#reg_number").keyup(function(event){
 	$(this).css("text-transform","uppercase")
+	$("#postlist").text('');
 	var myLength = $("#reg_number").val().replace(/ /g, '').length;
 		if(myLength>=6)
 		{
@@ -258,12 +263,12 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  color:#8bc34a;
  position:relative;
  top:40px;
- left:10px;
+ left:0px;
  width:100%;
  height: 25px;
  padding-top: 5px;
     padding-right: 0px;
-    padding-bottom: 45px;
+    padding-bottom: 60px;
     padding-left: 15px;
 }
 #div-headline-center-small {
@@ -395,7 +400,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  <!-- Rotating text -->
 <div id="div-placeholder">
  <div id="div-headline-center">SKICKA TEXT MED FORMULÄRET!</div>
-  <div id="div-headline-center-small" class="element"></div>
+ <!--<div id="div-headline-center-small" class="element"></div>-->
  </div>
  
  <!-- Form -->
@@ -426,7 +431,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 </select>   
 
 <div id="loader" style="display:none;"><img src="pix/loader.gif"></div>
-<input id="push_message" type="submit" value="Skicka" />
+<!--<input id="push_message" type="submit" value="Skicka" />-->
 <div id="postlist"></div>
 
 </div>
