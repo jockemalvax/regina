@@ -15,12 +15,7 @@ ini_set('display_errors', 'on');
 <script>
 
 $(document).ready(function(){
-	
-	
-      
-
-
-   //$( "#get_message" ).click(function() {
+	//$( "#get_message" ).click(function() {
     $(document).keypress(function(e) {
     if(e.which == 13) 
 	{
@@ -407,11 +402,11 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <div class="container"> 
   <!-- Navigation -->
   <header>
-    <h4 class="logo"><img src="pix/home.png" width="50" height="40" alt=""/></h4>
+      <a href="index.php"><h4 class="logo"><img src="pix/home.png" width="50px" height="40px"></h4></a>
     <div style="position:relative; left:0px; top: 18px; width: 1000px;" >
      
        <a href="read_text_with_regina.php" style="padding:25px;">LÄS TEXT</a>
-       <a href="index.php" style="padding:25px;">SKICKA TEXT</a>
+       <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
      <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
      <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
      <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
@@ -420,7 +415,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   </header>
   <!-- Hero Section --><!-- Rotating text -->
 <div id="div-placeholder">
- <div id="div-headline-center">LÄS TEXT OM DIN BIL!</div>
+ <div id="div-headline-center">LÄS TEXT!</div>
   <div id="div-headline-center-small" class="element"></div>
  </div>
  
