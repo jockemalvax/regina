@@ -18,6 +18,7 @@ $(document).ready(function(){
 
    //$( "#push_message" ).click(function() {
     $(document).keypress(function(e) {
+	$("#postlist").text('');
     if(e.which == 13) 
 	{     
 		var reg_number = $("#reg_number").val();
@@ -35,8 +36,13 @@ $(document).ready(function(){
                     $("#loader").show();
                 },
                 success:function(html){
-                       $("#loader").remove();
+                    $("#loader").remove();
                     $('#postlist').append(html); /* Post progress from insert function*/
+					$("#reg_number").val('');
+					$("#job").val('0');
+					$("#job").prop('disabled', 'disabled');
+					$("#reg_number").focus();
+					
                 }
             }); 
         }
@@ -65,9 +71,9 @@ $(document).ready(function(){
 	
 	$("#reg_number").keyup(function(event){
 	$(this).css("text-transform","uppercase")
-	$("#postlist").text('');
+	
 	var myLength = $("#reg_number").val().replace(/ /g, '').length;
-		if(myLength>=6)
+		if(myLength>=2)
 		{
 			 $("#job").prop('disabled', false);
 		}
@@ -401,22 +407,23 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
 <select id="job" name="field4" disabled>
 <option value="0" selected>Välj meddelande</option>
-<optgroup label="Indoors">
-  <option value="fishkeeping">Fishkeeping</option>
-  <option value="reading">Reading</option>
-  <option value="boxing">Boxing</option>
-  <option value="debate">Debate</option>
-  <option value="gaming">Gaming</option>
-  <option value="snooker">Snooker</option>
-  <option value="other_indoor">Other</option>
+<optgroup label="Gör någon glad">
+  <option value="tack">Tack!</option>
+  <option value="bakspegel">Snygg backspegel!</option>
+  <option value="blink">Blink blink</option>
 </optgroup>
-<optgroup label="Outdoors">
-  <option value="football">Football</option>
-  <option value="swimming">Swimming</option>
-  <option value="fishing">Fishing</option>
-  <option value="climbing">Climbing</option>
-  <option value="cycling">Cycling</option>
-  <option value="other_outdoor">Other</option>
+<optgroup label="Säg ifrån">
+  <option value="blinka">Men blinka då!!</option>
+  <option value="mobilen">Sluta kolla mobilen när du kör!!</option>
+  <option value="Svårt att läsa? - Parkering förbjuden här av en anledning!">Svårt att läsa? - Parkering förbjuden här av en anledning!</option>
+</optgroup>
+<optgroup label="Uppmana">
+  <option value="wash">Tvätta mig - mina grannar skäms!</option>
+  <option value="move">Flytta mig - det är städdag!</option>
+  <option value="look">Titta till mig - jag behöver dig!</option>
+</optgroup>
+<optgroup label="Fritext">
+  <option value="fri">Skriv fritext</option>
 </optgroup>
 </select>   
 

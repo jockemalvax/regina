@@ -35,7 +35,7 @@ $insert_row = $db->query("INSERT INTO message_que (M_Reg_number, M_Text_to_send,
           echo '</a></div>';
           echo $contentToSave.'</li>';
           $mysqli->close(); //close db connection */
-		  echo "Ditt meddelande är skickat!";
+		  echo "Du har skickat: @".strtoupper($reg_number)." - ".$text_to_push."!";
 
     }else{
         
@@ -44,7 +44,7 @@ $insert_row = $db->query("INSERT INTO message_que (M_Reg_number, M_Text_to_send,
         //kanske borde skriva ner felen till databasen?
 		//kolla hur man bäst sparar lösenorden
 		//kolla även hur man skyddar den här filen från botar osv ()
-		echo 'Something wring with insert statement'.mysqli_error($db);
+		echo 'Something wrong with insert statement'.mysqli_error($db);
 		//exit();
     }
 
