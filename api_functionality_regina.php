@@ -150,16 +150,16 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  width:100%;
 }
 #why_reg_row {
- display:block;
- position:relative;
- top:10px;
- left:10px;
- width:850px;
- height: 25px;
- padding-top: 25px;
-    padding-right: 0px;
-    padding-bottom: 25px;
-    padding-left: 30px;
+	display: block;
+	position: relative;
+	top: 10px;
+	left: 0px;
+	width: 850px;
+	height: 25px;
+	padding-top: 25px;
+	padding-right: 0px;
+	padding-bottom: 25px;
+	padding-left: 30px;
 }
 #div-placeholder_text {
  position:relative;
@@ -289,6 +289,16 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 .form-style-6 input[type="button"]:hover{
     background: #8bc34a;
 }
+.text_column_wide {
+	width: 90%;
+	text-align: left;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 25px;
+	padding-right: 20px;
+	color: #A3A3A3;
+}
 
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
@@ -317,7 +327,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
       
     </div>
   </header>
-   <!-- Hero Section --><!-- Rotating text --><!-- Form --><!-- Why Regina section -->
+  <!-- Hero Section --><!-- Rotating text --><!-- Form --><!-- Why Regina section -->
 <div id="div-placeholder">
  <div id="div-greenline"></div>
  <div id="div-headline"></div>
@@ -329,23 +339,16 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   </div>
  </div>
  
-    <div id="div-placeholder">
-    <p id="why_reg_row"><img src="pix/Broken_car_shield.jpg" width="250px" style="padding-left:10px;"> <img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;"><img id="why_reg_btn2" src="pix/Date_parking_sign.jpg" width="250"></p>
+    <div id="div-placeholder" style="padding-bottom:200px;">
+    <p id="why_reg_row"><img src="pix/funkar_top_image.jpg" width="900" height="360" style="padding-left:10px;"></p>
  </div>
   <div id="div-placeholder_text">
-   <p class="text_column" style="padding-left:30px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina.</p>
-    <p class="text_column">Ser du något skumt i ditt område? Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret.</p>
-    <p class="text_column">När din bil får en skada bör du agera skyndsamt för att undvika följdskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre.</p>
+   <p class="text_column_wide" style="padding-left:40px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina.</p>
   </div>
    <!-- End Why regina section -->
  
 
   <!-- Parallax Section -->
-  <section class="banner">
-    <h2 class="parallax">PARALLAX HERO</h2>
-    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-  </section>
- 
   <!-- More Info Section -->
   <footer>
     <article class="footer_column">
