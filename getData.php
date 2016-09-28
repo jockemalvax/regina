@@ -38,7 +38,7 @@ $query = $db->query("SELECT * FROM message_que WHERE M_Reg_number = '".$reg_numb
 	{ 
 	?>
     	<div id="div-placeholder">
-			<div id="result_box">@<?php echo htmlspecialchars(strtoupper($reg_number)); ?> - Vi hittade inga träffar just nu men det skulle kunna se ut så här när någon skickar till dig!
+			<div id="result_box">@<?php echo htmlspecialchars(strtoupper($reg_number)); ?> - Vi hittade inga träffar just nu, men det är så här de ser ut!
 		</div>
 		<p id="enter_text_2"><?php echo $date_to_push;?></p>
 	<?php 

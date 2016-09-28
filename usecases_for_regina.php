@@ -329,10 +329,10 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  </div>
  
     <div id="div-placeholder">
-    <p id="why_reg_row"><img src="pix/Broken_car_shield.jpg" width="250px" style="padding-left:10px;"> <img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;"><img id="why_reg_btn2" src="pix/Date_parking_sign.jpg" width="250"></p>
+    <p id="why_reg_row"><img src="pix/Date_parking_sign.jpg" width="250px" style="padding-left:10px;"> <img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;"><img id="why_reg_btn2" src="pix/Broken_car_shield.jpg" width="250"></p>
  </div>
   <div id="div-placeholder_text">
-   <p class="text_column" style="padding-left:30px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina.</p>
+   <p class="text_column" style="padding-left:30px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina. Behöver en rad text till här för att jämna ut!</p>
     <p class="text_column">Ser du något skumt i ditt område? Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret.</p>
     <p class="text_column">När din bil får en skada bör du agera skyndsamt för att undvika följdskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre.</p>
   </div>
