@@ -52,26 +52,9 @@ $(document).ready(function(){
 		}
 	}ß
 	});
-
- 
-/* $(function(){
-        $(".element").typed({
-            strings:
-			[
-			"@ODT401 Din bil är parkerad med lyktorna tända!", 
-			"@HMN338 P-lisor på gatan där din bil är parkerad!", 
-			"@MBO053 Tack, du är en ängel", 
-			"@KGZ342 Vad har du så bråttom till? Du riskerar liver på våra barn!", 
-			"@OZA032 ”Om du blinkar vänster i en rondell fattar ingen vart du ska!", 
-			],
-            typeSpeed: 10,
-			backSpeed: 0
-        });
-    }); */
 	
 	$("#reg_number").keyup(function(event){
 	$(this).css("text-transform","uppercase")
-	
 	var myLength = $("#reg_number").val().replace(/ /g, '').length;
 		if(myLength>=2)
 		{
@@ -409,21 +392,18 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <option value="0" selected>Välj meddelande</option>
 <optgroup label="Gör någon glad">
   <option value="tack">Tack!</option>
-  <option value="bakspegel">Snygg backspegel!</option>
-  <option value="blink">Blink blink</option>
+  <option value="Snygg backspegel!">Snygg backspegel!</option>
+  <option value="Blink blink">Blink blink</option>
 </optgroup>
 <optgroup label="Säg ifrån">
-  <option value="blinka">Men blinka då!!</option>
-  <option value="mobilen">Sluta kolla mobilen när du kör!!</option>
+  <option value="Men blinka då!!">Men blinka då!!</option>
+  <option value="Sluta kolla mobilen när du kör!!">Sluta kolla mobilen när du kör!!</option>
   <option value="Svårt att läsa? - Parkering förbjuden här av en anledning!">Svårt att läsa? - Parkering förbjuden här av en anledning!</option>
 </optgroup>
 <optgroup label="Uppmana">
-  <option value="wash">Tvätta mig - mina grannar skäms!</option>
-  <option value="move">Flytta mig - det är städdag!</option>
-  <option value="look">Titta till mig - jag behöver dig!</option>
-</optgroup>
-<optgroup label="Fritext">
-  <option value="fri">Skriv fritext</option>
+  <option value="Tvätta mig - mina grannar skäms!">Tvätta mig - mina grannar skäms!</option>
+  <option value="Flytta mig - det är städdag!">Flytta mig - det är städdag!</option>
+  <option value="Titta till mig - jag behöver dig!">Titta till mig - jag behöver dig!</option>
 </optgroup>
 </select>   
 
