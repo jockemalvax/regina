@@ -30,8 +30,9 @@ $(document).ready(function(){
 			
 			$.ajax({
                 type:'POST',
-                url:'pushData.php',
-                data:'reg_number='+reg_number+'&text_to_push='+text_to_push,
+                //url:'pushData.php',
+                url:'testcurl.php',
+				data:'reg_number='+reg_number+'&text_to_push='+text_to_push,
                 beforeSend:function(html){
                     $("#loader").show();
                 },
@@ -50,7 +51,7 @@ $(document).ready(function(){
 		{
 			//$("#text_row2").text(reg_number +" else_och " +text_to_push);
 		}
-	}ß
+	}
 	});
 	
 	$("#reg_number").keyup(function(event){
