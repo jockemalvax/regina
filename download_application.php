@@ -8,10 +8,9 @@ ini_set('display_errors', 'on');
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Så här funkar API:et bakom Regina</title>
+<title>Ladda ner Reginaappen!</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
-<script src="js/typed.js"></script>
 <style type="text/css">
 .container header div a {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -150,35 +149,25 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  width:100%;
 }
 #why_reg_row {
-	display: block;
-	position: relative;
-	top: 10px;
-	left: 0px;
-	width: 850px;
-	height: 25px;
-	padding-top: 25px;
-	padding-right: 0px;
-	padding-bottom: 25px;
-	padding-left: 30px;
+ display:block;
+ position:relative;
+ top:10px;
+ left:10px;
+ width:850px;
+ height: 25px;
+ padding-top: 25px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    padding-left: 30px;
 }
 #div-placeholder_text {
  position:relative;
- top:25px;
+ top:150px;
  width:100%;
  clear:both;
  overflow:hidden;
  background-color:#ffffff;
- padding-bottom: 50px;
-
-}
-#div-placeholder_text_faq {
- position:relative;
- top:25px;
- width:80%;
- clear:both;
- overflow:hidden;
- background-color:#ffffff;
- padding-bottom: 50px;
+ padding-bottom: 100px;
 
 }
 #why_reg_btn {
@@ -299,16 +288,6 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 .form-style-6 input[type="button"]:hover{
     background: #8bc34a;
 }
-.text_column_wide {
-	width: 90%;
-	text-align: left;
-	font-weight: lighter;
-	line-height: 25px;
-	float: left;
-	padding-left: 25px;
-	padding-right: 20px;
-	color: #A3A3A3;
-}
 
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
@@ -345,44 +324,24 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
    <!-- Form --><!-- Why Regina section -->
 <div id="div-placeholder">
-  <div id="div-headline">HUR FUNKAR DET?
+  <div id="div-headline">LADDA NER APPEN!
   </div>
  </div>
 
-    <div id="div-placeholder" style="height:300px;padding-bottom:100px;">
-    <p id="why_reg_row"><img src="pix/funkar_top_image.jpg" width="900" height="360" style="padding-left:10px;"></p>
+    <div id="div-placeholder">
+    <p id="why_reg_row">
+			<img src="pix/Date_parking_sign.jpg" width="250px" style="padding-left:10px;">
+			<img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;">
  </div>
+  <div id="div-placeholder_text">
+   <p class="text_column" style="padding-left:30px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina. Behöver en rad text till här för att jämna ut!</p>
+    <p class="text_column">Ser du något skumt i ditt område? Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret.</p>
 
+  </div>
    <!-- End Why regina section -->
 
 
-	 <div id="div-placeholder">
-		<div id="div-headline"></div>
-	  <div id="div-headline">FAQ</div>
-	  </div>
-
-		<div id="div-placeholder_text_faq">
-		<p class="text_column_wide" style="padding-left:40px;">1. Hur hittar jag texter som skickats till min bil? @svar: a. Gå in på ”Läs text” och knappa in ditt registreringsnummer.</p>
-		<p class="text_column_wide" style="padding-left:40px;">2. Jag hittar inte appen på appstore? @svar: a. Appen finns för närvarande bara för Android. Övriga får använda webben ytterligare en tid. Vi jobbar på det.</p>
-		<p class="text_column_wide" style="padding-left:40px;">3. Hur loggar jag in? @svar: Du behöver inte logga in. Vi har inget behov av att veta vem du är eller vilken e-post du har. All kommunikation sker direkt i appen och då behöver du inte logga in.</p>
-		<p class="text_column_wide" style="padding-left:40px;">4. Vem kan se vad jag skriver? @svar: Eftersom vem som helst kan söka på ett registreringsnummer kan vem som helst se vad som skickats till det. Regina är inte ett social nätverk där du har konversationer med individer. Regina är tänkt som ett öppet nätverk för information som kan hjälpa alla trafikanter. Därför har vi valt att köra öppet tills vidare.</p>
-		<p class="text_column_wide" style="padding-left:40px;">5. Kan andra användare se vem jag är? @svar: Nej, vi tillhandahåller ingen information om fordonet som har ett visst registreringsnummer. Inte heller någon information om ägaren eller föraren. Vi fixar så att ni kan snacka med varandra, utan att behöva veta vilka ni är. Det viktiga är att rätt person får informationen, inte vem den personen är.</p>
-		<p class="text_column_wide" style="padding-left:40px;">6. Jag har en moped, kommer det att fungera? @svar: Japp, all konversation sker runt registreringsnumret, inte fordonet. Alla fordon som har ett registreringsnummer kan använda Regina.</p>
-		<p class="text_column_wide" style="padding-left:40px;">7. Min bil är modern, jag behöver inte Regina. @svar: Nja, du behöver kanske inte Regina för att få veta att larmet på din bil går, eller att en lampa är trasig. Men andra trafikanter kan inte nå dig via den app som din biltillverkare utvecklat. Med Regina spelar årsmodell och bilmärke ingen roll. Alla kan vara med.</p>
-		<p class="text_column_wide" style="padding-left:40px;">8. Är det här allt? @svar: Vi på Regina har stora planer. Vi börjat dock med att etablera detta API för kommunikation. Hjälp oss sprida det för snabbare utveckling av häftiga funktioner. Vi hör av oss när det kommer uppdateringar.</p>
-		<p class="text_column_wide" style="padding-left:40px;"></p>
-		<p class="text_column_wide" style="padding-left:40px;">Har du en fråga som inte besvaras här så är du varmt välkommen att kontakta oss via hej@regina.se!</p>
-	</div>
-
-
-
-
-			<div id="div-headline"></div>
-			<div id="div-headline"></div>
-			<div id="div-headline"></div>
-			<div id="div-headline"></div>
-
-  <!-- Copyrights Section -->
+  <!-- More Info Section -->
 
 </div>
 <!-- Main Container Ends -->

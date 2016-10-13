@@ -61,7 +61,7 @@ a:active {
 #text_row1 {
  font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:45px;	
+ font-size:45px;
  color:#ffffff;
  position:relative;
  top:0px;
@@ -76,7 +76,7 @@ a:active {
 #text_row2 {
  font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:25px;	
+ font-size:25px;
  color:#ffffff;
  position:relative;
  top:10px;
@@ -114,7 +114,7 @@ a:active {
 #div-headline {
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:45px;	
+ font-size:45px;
  color:#8bc34a;
  position:relative;
  top:0px;
@@ -168,7 +168,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  overflow:hidden;
  background-color:#ffffff;
  padding-bottom: 100px;
- 
+
 }
 #why_reg_btn {
  position:relative;
@@ -187,7 +187,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 #div-headline-center {
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:45px;	
+ font-size:45px;
  text-align:center;
  color:#8bc34a;
  position:relative;
@@ -203,7 +203,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 #div-headline-center-small {
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:30px;	
+ font-size:30px;
  text-align:center;
  color:#555;
  position:relative;
@@ -235,7 +235,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     margin: -16px -16px 16px -16px;
 }
 .form-style-6 input[type="text"],
-.form-style-6 select 
+.form-style-6 select
 {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
@@ -254,7 +254,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     color: #555;
 	height:50px;
     font: 95% Arial, Helvetica, sans-serif;
-	 
+
 }
 .form-style-6 input[type="text"]:focus,
 .form-style-6 select:focus
@@ -281,7 +281,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     border-bottom: 2px solid #8bc34a;
     border-top-style: none;
     border-right-style: none;
-    border-left-style: none;    
+    border-left-style: none;
     color: #fff;
 }
 .form-style-6 input[type="submit"]:hover,
@@ -302,18 +302,18 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 </head>
 <body>
 <!-- Main Container -->
-<div class="container"> 
+<div class="container">
   <!-- Navigation -->
   <header>
       <a href="index.php"><h4 class="logo"><img src="pix/home.png" width="50px" height="40px"></h4></a>
     <div style="position:relative; left:0px; top: 18px; width: 1000px;" >
-     
+
        <a href="read_text_with_regina.php" style="padding:25px;">LÄS TEXT</a>
        <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
      <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
      <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
      <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
-      
+
     </div>
   </header>
   <!-- Hero Section --><!-- Rotating text --><!-- Form --><!-- Why Regina section -->
@@ -321,13 +321,13 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  <div id="div-greenline"></div>
  <div id="div-headline"></div>
  </div>
- 
+
    <!-- Form --><!-- Why Regina section -->
 <div id="div-placeholder">
   <div id="div-headline">VARFÖR REGINA!
   </div>
  </div>
- 
+
     <div id="div-placeholder">
     <p id="why_reg_row"><img src="pix/Date_parking_sign.jpg" width="250px" style="padding-left:10px;"> <img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;"><img id="why_reg_btn2" src="pix/Broken_car_shield.jpg" width="250"></p>
  </div>
@@ -339,33 +339,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
    <!-- End Why regina section -->
  
 
-  <!-- Parallax Section -->
-  <section class="banner">
-    <h2 class="parallax">PARALLAX HERO</h2>
-    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-  </section>
- 
   <!-- More Info Section -->
-  <footer>
-    <article class="footer_column">
-      <h3>ABOUT</h3>
-      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-    </article>
-    <article class="footer_column">
-      <h3>LOCATION</h3>
-      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-    </article>
-  </footer>
-  <!-- Footer Section -->
-  <section class="footer_banner" id="contact">
-    <h2 class="hidden">Footer Banner Section </h2>
-    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-    <div class="button">subscribe</div>
-  </section>
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2015 - <strong>Light Theme</strong></div>
+
 </div>
 <!-- Main Container Ends -->
 </body>
