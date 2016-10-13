@@ -45,8 +45,6 @@ $text_to_push = strip_tags($text_to_push);
 	
 	curl_close($ch);
 	
-	
-	
 	# Print response.
 	if($result)
 	{

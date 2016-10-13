@@ -31,7 +31,7 @@ $(document).ready(function(){
 			$.ajax({
                 type:'POST',
                 //url:'pushData.php',
-                url:'testcurl.php',
+                url:'pushData.php',
 				data:'reg_number='+reg_number+'&text_to_push='+text_to_push,
                 beforeSend:function(html){
                     $("#loader").show();
