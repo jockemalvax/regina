@@ -304,18 +304,18 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
-  <header>
-      <a href="index.php"><h4 class="logo"><img src="pix/home.png" width="50px" height="40px"></h4></a>
-    <div style="position:relative; left:0px; top: 18px; width: 1000px;" >
+	<header>
+			<a href="index.php"><h4 class="logo" style="width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
+		<div style="position:relative; left:60px; top: 18px; width: 900px; align:left;">
 
-       <a href="read_text_with_regina.php" style="padding:25px;">LÄS TEXT</a>
-       <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
-     <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
-     <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
-     <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
+			 <a href="read_text_with_regina.php" style="padding-right:25px;">LÄS TEXT</a>
+			 <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
+		 <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
+		 <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
+		 <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
 
-    </div>
-  </header>
+		</div>
+	</header>
   <!-- Hero Section --><!-- Rotating text --><!-- Form --><!-- Why Regina section -->
 <div id="div-placeholder">
  <div id="div-greenline"></div>
@@ -337,7 +337,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     <p class="text_column">När din bil får en skada bör du agera skyndsamt för att undvika följdskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre.</p>
   </div>
    <!-- End Why regina section -->
- 
+
 
   <!-- More Info Section -->
 

@@ -19,15 +19,15 @@ $(document).ready(function(){
    //$( "#push_message" ).click(function() {
     $(document).keypress(function(e) {
 	$("#postlist").text('');
-    if(e.which == 13) 
-	{     
+    if(e.which == 13)
+	{
 		var reg_number = $("#reg_number").val();
 		var text_to_push = $("#job").val();
 		/* write function to verify properly*/
         if (reg_number.length>0 && text_to_push!=0){
-            
+
 			//$("#text_row2").text(reg_number +" if_och " +text_to_push + text_to_push.length);
-			
+
 			$.ajax({
                 type:'POST',
                 //url:'pushData.php',
@@ -43,9 +43,9 @@ $(document).ready(function(){
 					$("#job").val('0');
 					$("#job").prop('disabled', 'disabled');
 					$("#reg_number").focus();
-					
+
                 }
-            }); 
+            });
         }
 		else
 		{
@@ -53,7 +53,7 @@ $(document).ready(function(){
 		}
 	}
 	});
-	
+
 	$("#reg_number").keyup(function(event){
 	$(this).css("text-transform","uppercase")
 	var myLength = $("#reg_number").val().replace(/ /g, '').length;
@@ -61,7 +61,7 @@ $(document).ready(function(){
 		{
 			 $("#job").prop('disabled', false);
 		}
-		else 
+		else
 		{
 			$("#job").prop('disabled', 'disabled');
 			  if((myLength==0))
@@ -122,7 +122,7 @@ a:active {
 #text_row1 {
  font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:45px;	
+ font-size:45px;
  color:#ffffff;
  position:relative;
  top:0px;
@@ -137,7 +137,7 @@ a:active {
 #text_row2 {
  font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:25px;	
+ font-size:25px;
  color:#ffffff;
  position:relative;
  top:10px;
@@ -175,7 +175,7 @@ a:active {
 #div-headline {
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:45px;	
+ font-size:45px;
  color:#8bc34a;
  position:relative;
  top:40px;
@@ -229,7 +229,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  overflow:hidden;
  background-color:#ffffff;
  padding-bottom: 100px;
- 
+
 }
 #why_reg_btn {
  position:relative;
@@ -248,7 +248,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 #div-headline-center {
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:45px;	
+ font-size:45px;
  text-align:left;
  color:#8bc34a;
  position:relative;
@@ -264,7 +264,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 #div-headline-center-small {
 font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-weight:bold;
- font-size:30px;	
+ font-size:30px;
  text-align:center;
  color:#555;
  position:relative;
@@ -296,7 +296,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     margin: -16px -16px 16px -16px;
 }
 .form-style-6 input[type="text"],
-.form-style-6 select 
+.form-style-6 select
 {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
@@ -315,7 +315,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     color: #555;
 	height:50px;
     font: 95% Arial, Helvetica, sans-serif;
-	 
+
 }
 .form-style-6 input[type="text"]:focus,
 .form-style-6 select:focus
@@ -342,7 +342,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     border-bottom: 2px solid #8bc34a;
     border-top-style: none;
     border-right-style: none;
-    border-left-style: none;    
+    border-left-style: none;
     color: #fff;
 }
 .form-style-6 input[type="submit"]:hover,
@@ -363,18 +363,18 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 </head>
 <body onLoad="reg_number.focus();">
 <!-- Main Container -->
-<div class="container"> 
+<div class="container">
   <!-- Navigation -->
   <header>
-    <a href="index.php"><h4 class="logo"><img src="pix/home.png" width="50px" height="40px"></h4></a>
-    <div style="position:relative; left:0px; top: 18px; width: 1000px;" >
-     
-       <a href="read_text_with_regina.php" style="padding:25px;">LÄS TEXT</a>
+      <a href="index.php"><h4 class="logo" style="width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
+    <div style="position:relative; left:60px; top: 18px; width: 900px; align:left;">
+
+       <a href="read_text_with_regina.php" style="padding-right:25px;">LÄS TEXT</a>
        <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
      <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
      <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
      <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
-      
+
     </div>
   </header>
   <!-- Hero Section --><!-- Rotating text -->
@@ -382,7 +382,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  <div id="div-headline-center">SKICKA TEXT!</div>
  <!--<div id="div-headline-center-small" class="element"></div>-->
  </div>
- 
+
  <!-- Form -->
  <div id="div-placeholder">
  <div class="form-style-6">
@@ -406,7 +406,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   <option value="Flytta mig - det är städdag!">Flytta mig - det är städdag!</option>
   <option value="Titta till mig - jag behöver dig!">Titta till mig - jag behöver dig!</option>
 </optgroup>
-</select>   
+</select>
 
 <div id="loader" style="display:none;"><img src="pix/loader.gif"></div>
 <!--<input id="push_message" type="submit" value="Skicka" />-->
@@ -416,7 +416,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 </div>
 
 <!-- Search results -->
- 
+
  <div id="div-placeholder" style="height:300px;"></div>
 
  <!-- Why Regina section -->
@@ -425,10 +425,10 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  <div id="div-greenline">
  </div>
 </div>
- 
+
     <div id="div-placeholder"></div>
    <!-- End Why regina section -->
- 
+
 
   <!-- Parallax Section --><!-- More Info Section -->
   <footer></footer>
