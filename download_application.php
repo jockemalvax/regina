@@ -304,11 +304,11 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
-  <header>
-      <a href="index.php"><h4 class="logo"><img src="pix/home.png" width="50px" height="40px"></h4></a>
-    <div style="position:relative; left:0px; top: 18px; width: 1000px;" >
+	<header>
+      <a href="index.php"><h4 class="logo" style="width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
+    <div style="position:relative; left:60px; top: 18px; width: 900px; align:left;">
 
-       <a href="read_text_with_regina.php" style="padding:25px;">LÄS TEXT</a>
+       <a href="read_text_with_regina.php" style="padding-right:25px;">LÄS TEXT</a>
        <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
      <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
      <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>

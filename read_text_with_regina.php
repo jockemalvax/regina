@@ -11,7 +11,6 @@ ini_set('display_errors', 'on');
 <title>Regina sverige - Läs text om din bil</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
-<script src="js/typed.js"></script>
 <script>
 
 $(document).ready(function(){

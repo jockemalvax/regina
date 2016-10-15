@@ -6,8 +6,6 @@ ini_set('display_errors', 'on');
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Regina sverige</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
@@ -237,78 +235,6 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     padding-bottom: 45px;
     padding-left: 15px;
 }
-.form-style-6{
-    font: Arial, Helvetica, sans-serif;
-	font-size:23px;
-	text-align:center;
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 16px;
-    background: #ffffff;
-}
-.form-style-6 h1{
-    background: #8bc34a;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
-}
-.form-style-6 input[type="text"],
-.form-style-6 select
-{
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    -webkit-border-radius: 5px;
-    outline:none;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-    margin-bottom: 4%;
-    border: 1px solid #8bc34a;
-    padding: 3%;
-    color: #555;
-	height:50px;
-    font: 95% Arial, Helvetica, sans-serif;
-
-}
-.form-style-6 input[type="text"]:focus,
-.form-style-6 select:focus
-{
-    box-shadow: 0 0 5px #8bc34a;
-    padding: 3%;
-    border: 1px solid #8bc34a;
-}
-.form-style-6 select:disabled
-{
-    box-shadow: 0 0 5px #ccc;
-    border: 1px solid #ccc;
-	color: #ccc;
-}
-
-.form-style-6 input[type="submit"],
-.form-style-6 input[type="button"]{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: #8bc34a;
-    border-bottom: 2px solid #8bc34a;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff;
-}
-.form-style-6 input[type="submit"]:hover,
-.form-style-6 input[type="button"]:hover{
-    background: #8bc34a;
-}
 #faqs dt, #faqs dd { padding: 0 0 0 50px }
 #faqs dt { font-family: Arial,Gotham, Helvetica Neue;font-size:1.5em; color: #8bc34a; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
 #faqs dd { font-family: Arial,Gotham, Helvetica Neue;font-size: 1em; margin: 0 0 20px 25px}
@@ -321,7 +247,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <div class="container">
   <!-- Navigation -->
   <header>
-      <a href="index.php"><h4 class="logo" style="width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
+      <a href="index.php"><h4 class="logo" style="cursor:hand;width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
     <div style="position:relative; left:60px; top: 18px; width: 900px; align:left;">
 
        <a href="read_text_with_regina.php" style="padding-right:25px;">LÄS TEXT</a>
