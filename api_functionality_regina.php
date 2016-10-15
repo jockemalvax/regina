@@ -11,6 +11,7 @@ ini_set('display_errors', 'on');
 <title>Så här funkar API:et bakom Regina</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
+<link rel="icon" href="pix/favicon.png">
 <script>
 $(document).ready(function(){
     $("#faqs dd").hide();
@@ -392,7 +393,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 		  <dd>Alla fordon som har ett registreringsnummer kan använda Regina</dd>
 
 			<dt>Är API:et öppet för ALLA!</dt>
-		  <dd>JA! - Vi vill att alla skall använda Reginas API. Skicka mail till hej[at]reginasverige.se och begär nyckel så kommer du snabbt igång</dd>
+		  <dd>JA! - Vi vill att alla skall använda Reginas API. Kontakta oss via vår FB för att få en nyckel: <a href="http://facebook.com/reginasverige" target="_blank">API nyckel</a></dd>
 		</dl>
 	</div>
 

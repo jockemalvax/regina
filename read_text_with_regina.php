@@ -8,9 +8,10 @@ ini_set('display_errors', 'on');
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Regina sverige - Läs text om din bil</title>
+<title>Läs text om din bil</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
+<link rel="icon" href="pix/favicon.png">
 <script>
 
 $(document).ready(function(){
@@ -437,8 +438,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  <!-- Why Regina section -->
 <div id="div-placeholder">
 
- <div id="div-greenline">
- </div>
+
 </div>
 
     <div id="div-placeholder"></div>

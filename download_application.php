@@ -11,6 +11,7 @@ ini_set('display_errors', 'on');
 <title>Ladda ner Reginaappen!</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
+<link rel="icon" href="pix/favicon.png">
 <style type="text/css">
 .container header div a {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -216,89 +217,19 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     padding-bottom: 45px;
     padding-left: 15px;
 }
-.form-style-6{
-    font: Arial, Helvetica, sans-serif;
-	font-size:23px;
-	text-align:center;
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 16px;
-    background: #ffffff;
-}
-.form-style-6 h1{
-    background: #8bc34a;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
-}
-.form-style-6 input[type="text"],
-.form-style-6 select
-{
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    -webkit-border-radius: 5px;
-    outline:none;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-    margin-bottom: 4%;
-    border: 1px solid #8bc34a;
-    padding: 3%;
-    color: #555;
-	height:50px;
-    font: 95% Arial, Helvetica, sans-serif;
-
-}
-.form-style-6 input[type="text"]:focus,
-.form-style-6 select:focus
-{
-    box-shadow: 0 0 5px #8bc34a;
-    padding: 3%;
-    border: 1px solid #8bc34a;
-}
-.form-style-6 select:disabled
-{
-    box-shadow: 0 0 5px #ccc;
-    border: 1px solid #ccc;
-	color: #ccc;
-}
-
-.form-style-6 input[type="submit"],
-.form-style-6 input[type="button"]{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: #8bc34a;
-    border-bottom: 2px solid #8bc34a;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff;
-}
-.form-style-6 input[type="submit"]:hover,
-.form-style-6 input[type="button"]:hover{
-    background: #8bc34a;
+.text_column {
+	font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+	width: 28%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 25px;
+	padding-right: 20px;
+	color: #555;
 }
 
 </style>
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <!-- Main Container -->
@@ -328,16 +259,24 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   </div>
  </div>
 
-    <div id="div-placeholder">
-    <p id="why_reg_row">
-			<img src="pix/Date_parking_sign.jpg" width="250px" style="padding-left:10px;">
-			<img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;">
- </div>
-  <div id="div-placeholder_text">
-   <p class="text_column" style="padding-left:30px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina. Behöver en rad text till här för att jämna ut!</p>
-    <p class="text_column">Ser du något skumt i ditt område? Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret.</p>
+ <div id="div-placeholder">
+ <p id="why_reg_row">
+	 <img src="pix/download_googleplay_small.png" width="250px">
+</div>
+<div id="div-placeholder_text" style="top: 60px;width:630px;">
+<p class="text_column" style="width: 600px; padding-left:30px;">Vi har testat appen på full-HD skärmar med de senaste android versionerna. Stöter du på något problem vill vi gärna du kontaktar oss direkt så vi kan fixa problemet. <br> Du kontaktar oss snabbast via vår FB site: <a href="http://facebook.com/reginasverige" target="_blank">Kontakta Regina via FB</a>
+</p>
+</div>
 
-  </div>
+<div id="div-placeholder">
+<p id="why_reg_row">
+	<img src="pix/download_appstore_small.png" width="250px">
+</div>
+<div id="div-placeholder_text" style="top: 60px;width:1000px">
+<p class="text_column" style="width: 600px; padding-left:30px;">iOS versionen av Regina är ännu inte färdig och vi gör vårt bästa för att den skall bli klar så snabbt sm möjligt. <br> Om du är grym på swift eller har andra förslag på hur vi kan bli färdiga snabbare får du gärna höra av dig och berätta om dina tankar. <a href="http://facebook.com/reginasverige" target="_blank">Kontakta Regina via FB</a>
+</p>
+</div>
+<div id="div-placeholder"></div>
    <!-- End Why regina section -->
 
 

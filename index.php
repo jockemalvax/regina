@@ -9,6 +9,7 @@ ini_set('display_errors', 'on');
 <title>Regina sverige</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
+<link rel="icon" href="pix/favicon.png">
 <script>
 $(document).ready(function(){
     $("#faqs dd").hide();
@@ -235,6 +236,17 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     padding-bottom: 45px;
     padding-left: 15px;
 }
+.text_column {
+	font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+	width: 28%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 25px;
+	padding-right: 20px;
+	color: #555;
+}
 #faqs dt, #faqs dd { padding: 0 0 0 50px }
 #faqs dt { font-family: Arial,Gotham, Helvetica Neue;font-size:1.5em; color: #8bc34a; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
 #faqs dd { font-family: Arial,Gotham, Helvetica Neue;font-size: 1em; margin: 0 0 20px 25px}
@@ -263,10 +275,12 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   <div id="div-1b">
     <p id="text_row1">SKICKA TEXT TILL <br> BILÄGARE</p>
     <p id="text_row2">VIA TELEFON ELLER <br> WEBBEN</p>
-    <p id="text_row_btn"><img src="pix/download_appstore.png" width="150" height="47"> <img id="appstore_btn" src="pix/download_googleplay.png" width="160" height="45"></p>
+    <p id="text_row_btn"><a href="download_application.php"><img src="pix/download_googleplay.png" width="150" height="47"></a><a href="download_application.php"><img id="appstore_btn" src="pix/download_appstore.png" width="160" height="45"></a></p>
+    <p id="text_row2">Få access till API:et!</p>
   </div>
   <div id="div-1a"><img style="padding-left:75px;" src="pix/regina_android_iphone_apps.png" width="375" height="399"></div>
 </div>
+
 
  <!-- Rotating text -->
 <div id="div-placeholder"><!--<div id="div-headline-center-small" class="element"></div>-->
@@ -281,11 +295,11 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     <div id="div-placeholder">
     <p id="why_reg_row"><img src="pix/Broken_car_shield.jpg" width="250px" style="padding-left:10px;"> <img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;"><img id="why_reg_btn2" src="pix/Date_parking_sign.jpg" width="250"></p>
  </div>
-  <div id="div-placeholder_text">
-   <p class="text_column" style="padding-left:30px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina.</p>
-    <p class="text_column">Ser du något skumt i ditt område? Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret.</p>
-    <p class="text_column">När din bil får en skada bör du agera skyndsamt för att undvika följdskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre.</p>
-  </div>
+ <div id="div-placeholder_text">
+  <p class="text_column" style="padding-left:30px;"><a href="">Upplys!</a> Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. En del har ställt sig där medvetet men de flesta har helt enkelt glömt av att bilen står där. Gör en god gärning och skicka en påminnelse. Allt du behöver är registreringsnumret och Regina. Förutom uppskattning från medtrafikant så hjälper du staden hålla nere kostnaden för renhållning och snöröjning. Bra va?</p>
+   <p class="text_column"><a href="">Samverka!</a> Det finns en ökad medvetenhet om brott och beteende som föregår brott. Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret</p>
+   <p class="text_column"><a href="">Minimera skada!</a> När din bil får en skada bör du agera skyndsamt för att undvika sekundärskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre. Vi på Regina har ännu inte lösningen att förhindra inbrottet, men följdskadorna kan minimeras om vi lättare får tag på varandra</p>
+ </div>
    <!-- End Why regina section -->
 
    <div id="div-headline"></div>

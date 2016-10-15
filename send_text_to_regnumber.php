@@ -11,7 +11,7 @@ ini_set('display_errors', 'on');
 <title>Skicka text till registreringsnummer med Regina</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
-<script src="js/typed.js"></script>
+<link rel="icon" href="pix/favicon.png">
 <script>
 
 $(document).ready(function(){
@@ -422,8 +422,6 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  <!-- Why Regina section -->
 <div id="div-placeholder">
 
- <div id="div-greenline">
- </div>
 </div>
 
     <div id="div-placeholder"></div>

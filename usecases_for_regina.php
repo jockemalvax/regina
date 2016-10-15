@@ -11,6 +11,7 @@ ini_set('display_errors', 'on');
 <title>Så här skall man använda Regina!</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
+<link rel="icon" href="pix/favicon.png">
 <style type="text/css">
 .container header div a {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -216,89 +217,19 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     padding-bottom: 45px;
     padding-left: 15px;
 }
-.form-style-6{
-    font: Arial, Helvetica, sans-serif;
-	font-size:23px;
-	text-align:center;
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 16px;
-    background: #ffffff;
-}
-.form-style-6 h1{
-    background: #8bc34a;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
-}
-.form-style-6 input[type="text"],
-.form-style-6 select
-{
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    -webkit-border-radius: 5px;
-    outline:none;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-    margin-bottom: 4%;
-    border: 1px solid #8bc34a;
-    padding: 3%;
-    color: #555;
-	height:50px;
-    font: 95% Arial, Helvetica, sans-serif;
-
-}
-.form-style-6 input[type="text"]:focus,
-.form-style-6 select:focus
-{
-    box-shadow: 0 0 5px #8bc34a;
-    padding: 3%;
-    border: 1px solid #8bc34a;
-}
-.form-style-6 select:disabled
-{
-    box-shadow: 0 0 5px #ccc;
-    border: 1px solid #ccc;
-	color: #ccc;
-}
-
-.form-style-6 input[type="submit"],
-.form-style-6 input[type="button"]{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: #8bc34a;
-    border-bottom: 2px solid #8bc34a;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff;
-}
-.form-style-6 input[type="submit"]:hover,
-.form-style-6 input[type="button"]:hover{
-    background: #8bc34a;
+.text_column {
+	font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+	width: 28%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 25px;
+	padding-right: 20px;
+	color: #555;
 }
 
 </style>
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <!-- Main Container -->
@@ -332,9 +263,9 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     <p id="why_reg_row"><img src="pix/Date_parking_sign.jpg" width="250px" style="padding-left:10px;"> <img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;"><img id="why_reg_btn2" src="pix/Broken_car_shield.jpg" width="250"></p>
  </div>
   <div id="div-placeholder_text">
-   <p class="text_column" style="padding-left:30px;">Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. Gör en god gärning och skicka en påminnelse. Allt du behöver är regnummer och Regina. Behöver en rad text till här för att jämna ut!</p>
-    <p class="text_column">Ser du något skumt i ditt område? Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret.</p>
-    <p class="text_column">När din bil får en skada bör du agera skyndsamt för att undvika följdskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre.</p>
+   <p class="text_column" style="padding-left:30px;"><a href="">Upplys!</a> Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. En del har ställt sig där medvetet men de flesta har helt enkelt glömt av att bilen står där. Gör en god gärning och skicka en påminnelse. Allt du behöver är registreringsnumret och Regina. Förutom uppskattning från medtrafikant så hjälper du staden hålla nere kostnaden för renhållning och snöröjning. Bra va?</p>
+    <p class="text_column"><a href="">Samverka!</a> Det finns en ökad medvetenhet om brott och beteende som föregår brott. Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret</p>
+    <p class="text_column"><a href="">Minimera skada!</a> När din bil får en skada bör du agera skyndsamt för att undvika sekundärskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre. Vi på Regina har ännu inte lösningen att förhindra inbrottet, men följdskadorna kan minimeras om vi lättare får tag på varandra</p>
   </div>
    <!-- End Why regina section -->
 
