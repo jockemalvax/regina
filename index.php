@@ -11,75 +11,13 @@ ini_set('display_errors', 'on');
 <title>Regina sverige</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
-<script src="js/typed.js"></script>
 <script>
-
 $(document).ready(function(){
-
-   //$( "#push_message" ).click(function() {
-    $(document).keypress(function(e) {
-    if(e.which == 13)
-	{
-		var reg_number = $("#reg_number").val();
-		var text_to_push = $("#job").val();
-		/* write function to verify properly*/
-        if (reg_number.length>0 && text_to_push!=0){
-
-			//$("#text_row2").text(reg_number +" if_och " +text_to_push + text_to_push.length);
-
-			$.ajax({
-                type:'POST',
-                url:'pushData.php',
-                data:'reg_number='+reg_number+'&text_to_push='+text_to_push,
-                beforeSend:function(html){
-                    $("#loader").show();
-                },
-                success:function(html){
-                       $("#loader").remove();
-                    $('#postlist').append(html); /* Post progress from insert function*/
-                }
-            });
-        }
-		else
-		{
-			//$("#text_row2").text(reg_number +" else_och " +text_to_push);
-		}
-	}ß
-	});
-
-
-/* $(function(){
-        $(".element").typed({
-            strings:
-			[
-			"@ODT401 Din bil är parkerad med lyktorna tända!",
-			"@HMN338 P-lisor på gatan där din bil är parkerad!",
-			"@MBO053 Tack, du är en ängel",
-			"@KGZ342 Vad har du så bråttom till? Du riskerar liver på våra barn!",
-			"@OZA032 ”Om du blinkar vänster i en rondell fattar ingen vart du ska!",
-			],
-            typeSpeed: 10,
-			backSpeed: 0
-        });
-    }); */
-
-	$("#reg_number").keyup(function(event){
-	$(this).css("text-transform","uppercase")
-	$("#postlist").text('');
-	var myLength = $("#reg_number").val().replace(/ /g, '').length;
-		if(myLength>=6)
-		{
-			 $("#job").prop('disabled', false);
-		}
-		else
-		{
-			$("#job").prop('disabled', 'disabled');
-			  if((myLength==0))
-			{
-				$(this).css("text-transform","capitalize")
-			}
-		}
-	});
+    $("#faqs dd").hide();
+    $("#faqs dt").click(function () {
+        $(this).next("#faqs dd").slideToggle(500);
+        $(this).toggleClass("expanded");
+    });
 });
 </script>
 <style type="text/css">
@@ -370,7 +308,11 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 .form-style-6 input[type="button"]:hover{
     background: #8bc34a;
 }
-
+#faqs dt, #faqs dd { padding: 0 0 0 50px }
+#faqs dt { font-family: Arial,Gotham, Helvetica Neue;font-size:1.5em; color: #8bc34a; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
+#faqs dd { font-family: Arial,Gotham, Helvetica Neue;font-size: 1em; margin: 0 0 20px 25px}
+#faqs dt { background: url(pix/expand-icon.png) no-repeat left}
+#faqs .expanded { background: url(pix/expanded-icon.png) no-repeat left}
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -450,18 +392,25 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	  <div id="div-headline" style="height:75px;">FAQ</div>
 	  </div>
 
-		<div id="div-placeholder_text_faq">
-		<p class="text_column_wide" style="padding-left:40px;">1. Hur hittar jag texter som skickats till min bil? @svar: a. Gå in på ”Läs text” och knappa in ditt registreringsnummer.</p>
-		<p class="text_column_wide" style="padding-left:40px;">2. Jag hittar inte appen på appstore? @svar: a. Appen finns för närvarande bara för Android. Övriga får använda webben ytterligare en tid. Vi jobbar på det.</p>
-		<p class="text_column_wide" style="padding-left:40px;">3. Hur loggar jag in? @svar: Du behöver inte logga in. Vi har inget behov av att veta vem du är eller vilken e-post du har. All kommunikation sker direkt i appen och då behöver du inte logga in.</p>
-		<p class="text_column_wide" style="padding-left:40px;">4. Vem kan se vad jag skriver? @svar: Eftersom vem som helst kan söka på ett registreringsnummer kan vem som helst se vad som skickats till det. Regina är inte ett social nätverk där du har konversationer med individer. Regina är tänkt som ett öppet nätverk för information som kan hjälpa alla trafikanter. Därför har vi valt att köra öppet tills vidare.</p>
-		<p class="text_column_wide" style="padding-left:40px;">5. Kan andra användare se vem jag är? @svar: Nej, vi tillhandahåller ingen information om fordonet som har ett visst registreringsnummer. Inte heller någon information om ägaren eller föraren. Vi fixar så att ni kan snacka med varandra, utan att behöva veta vilka ni är. Det viktiga är att rätt person får informationen, inte vem den personen är.</p>
-		<p class="text_column_wide" style="padding-left:40px;">6. Jag har en moped, kommer det att fungera? @svar: Japp, all konversation sker runt registreringsnumret, inte fordonet. Alla fordon som har ett registreringsnummer kan använda Regina.</p>
-		<p class="text_column_wide" style="padding-left:40px;">7. Min bil är modern, jag behöver inte Regina. @svar: Nja, du behöver kanske inte Regina för att få veta att larmet på din bil går, eller att en lampa är trasig. Men andra trafikanter kan inte nå dig via den app som din biltillverkare utvecklat. Med Regina spelar årsmodell och bilmärke ingen roll. Alla kan vara med.</p>
-		<p class="text_column_wide" style="padding-left:40px;">8. Är det här allt? @svar: Vi på Regina har stora planer. Vi börjat dock med att etablera detta API för kommunikation. Hjälp oss sprida det för snabbare utveckling av häftiga funktioner. Vi hör av oss när det kommer uppdateringar.</p>
-		<p class="text_column_wide" style="padding-left:40px;"></p>
-		<p class="text_column_wide" style="padding-left:40px;">Har du en fråga som inte besvaras här så är du varmt välkommen att kontakta oss via hej@regina.se!</p>
-	</div>
+    <div id="div-placeholder_text_faq" style="padding-left:18px; padding-top:15px;">
+  		<dl id="faqs">
+
+  		  <dt>Jag hittar inte appen på appstore!</dt>
+  		  <dd>Appen finns för närvarande bara för Android. Vi jobbar på en iOS version med tillsvidare kan du använda webben för att skicka/lyssna!</dd>
+
+  			<dt>Vem kan se vad jag skriver?</dt>
+  		  <dd>Alla som söker på ett specifikt regnummer kan läsa det som skickats till just det regnumret</dd>
+
+  			<dt>Kan andra användare se vem jag är?</dt>
+  		  <dd>Nej! - All kommunikation identifieras via regnumret och vi behöver inte veta vem du är för att det ska funka</dd>
+
+  			<dt>Fungerar Regina på alla fordon?</dt>
+  		  <dd>Alla fordon som har ett registreringsnummer kan använda Regina</dd>
+
+  			<dt>Är API:et öppet för ALLA!</dt>
+  		  <dd>JA! - Vi vill att alla skall använda Reginas API. Skicka mail till hej[at]reginasverige.se och begär nyckel så kommer du snabbt igång</dd>
+  		</dl>
+  	</div>
 
 
   <div id="div-headline"></div>

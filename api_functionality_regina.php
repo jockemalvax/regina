@@ -11,7 +11,16 @@ ini_set('display_errors', 'on');
 <title>Så här funkar API:et bakom Regina</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
-<script src="js/typed.js"></script>
+<script>
+$(document).ready(function(){
+    $("#faqs dd").hide();
+    $("#faqs dt").click(function () {
+        $(this).next("#faqs dd").slideToggle(500);
+        $(this).toggleClass("expanded");
+    });
+});
+</script>
+
 <style type="text/css">
 .container header div a {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -309,6 +318,11 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	padding-right: 20px;
 	color: #A3A3A3;
 }
+#faqs dt, #faqs dd { padding: 0 0 0 50px }
+#faqs dt { font-family: Arial,Gotham, Helvetica Neue;font-size:1.5em; color: #555; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
+#faqs dd { font-family: Arial,Gotham, Helvetica Neue;font-size: 1em; margin: 0 0 20px 25px}
+#faqs dt { background: url(pix/expand-icon.png) no-repeat left}
+#faqs .expanded { background: url(pix/expanded-icon.png) no-repeat left}
 
 </style>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
@@ -361,7 +375,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	  <div id="div-headline">FAQ</div>
 	  </div>
 
-		<div id="div-placeholder_text_faq">
+	<!--	<div id="div-placeholder_text_faq">
 		<p class="text_column_wide" style="padding-left:40px;">1. Hur hittar jag texter som skickats till min bil? @svar: a. Gå in på ”Läs text” och knappa in ditt registreringsnummer.</p>
 		<p class="text_column_wide" style="padding-left:40px;">2. Jag hittar inte appen på appstore? @svar: a. Appen finns för närvarande bara för Android. Övriga får använda webben ytterligare en tid. Vi jobbar på det.</p>
 		<p class="text_column_wide" style="padding-left:40px;">3. Hur loggar jag in? @svar: Du behöver inte logga in. Vi har inget behov av att veta vem du är eller vilken e-post du har. All kommunikation sker direkt i appen och då behöver du inte logga in.</p>
@@ -373,8 +387,27 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 		<p class="text_column_wide" style="padding-left:40px;"></p>
 		<p class="text_column_wide" style="padding-left:40px;">Har du en fråga som inte besvaras här så är du varmt välkommen att kontakta oss via hej@regina.se!</p>
 	</div>
+	-->
 
+	<div id="div-placeholder_text_faq" style="padding-left:15px; padding-top:25px;">
+		<dl id="faqs">
 
+		  <dt>Jag hittar inte appen på appstore!</dt>
+		  <dd>Appen finns för närvarande bara för Android. Vi jobbar på en iOS version med tillsvidare kan du använda webben för att skicka/lyssna!</dd>
+
+			<dt>Vem kan se vad jag skriver?</dt>
+		  <dd>Alla som söker på ett specifikt regnummer kan läsa det som skickats till just det regnumret</dd>
+
+			<dt>Kan andra användare se vem jag är?</dt>
+		  <dd>Nej! - All kommunikation identifieras via regnumret och vi behöver inte veta vem du är för att det ska funka</dd>
+
+			<dt>Fungerar Regina på alla fordon?</dt>
+		  <dd>Alla fordon som har ett registreringsnummer kan använda Regina</dd>
+
+			<dt>Är API:et öppet för ALLA!</dt>
+		  <dd>JA! - Vi vill att alla skall använda Reginas API. Skicka mail till hej[at]reginasverige.se och begär nyckel så kommer du snabbt igång</dd>
+		</dl>
+	</div>
 
 
 			<div id="div-headline"></div>
