@@ -182,7 +182,6 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  overflow:hidden;
  background-color:#ffffff;
  padding-bottom: 100px;
-
 }
 #why_reg_btn {
  position:relative;
@@ -251,6 +250,17 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	padding-left: 25px;
 	padding-right: 20px;
 	color: #4c4c4c;
+}
+#footer {
+ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ color: #ffffff;
+ position:relative;
+ top:50px;
+ width:100%;
+ clear:both;
+ overflow:hidden;
+ padding-bottom: 50px;
+ background-color:#8bc34a;
 }
 #faqs dt, #faqs dd { padding: 0 0 0 50px }
 #faqs dt { font-family: Arial,Gotham, Helvetica Neue;font-size:1.5em; color: #8bc34a; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
@@ -341,11 +351,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   		</dl>
   	</div>
 
-
-  <div id="div-headline"></div>
-  <div id="div-headline"></div>
-  <div id="div-headline"></div>
   <div id="div-headline"></div>
 <!-- Main Container Ends -->
+  <?php include_once("footer.php") ?>
 </body>
 </html>

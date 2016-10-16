@@ -392,6 +392,17 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  font-size:22px;
  color:#8bc34a;
 }
+#footer {
+ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ color: #ffffff;
+ position:relative;
+ top:50px;
+ width:100%;
+ clear:both;
+ overflow:hidden;
+ padding-bottom: 50px;
+ background-color:#8bc34a;
+}
 
 </style>
 </head>
@@ -453,10 +464,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
    <!-- End Why regina section -->
 
 
-  <!-- Parallax Section --><!-- More Info Section -->
-  <footer></footer>
-  <!-- Footer Section --><!-- Copyrights Section -->
-</div>
-<!-- Main Container Ends -->
-</body>
-</html>
+   <div id="div-headline"></div>
+ <!-- Main Container Ends -->
+   <?php include_once("footer.php") ?>
+ </body>
+ </html>

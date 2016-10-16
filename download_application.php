@@ -232,7 +232,17 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	padding-right: 20px;
 	color: #555;
 }
-
+#footer {
+ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ color: #ffffff;
+ position:relative;
+ top:50px;
+ width:100%;
+ clear:both;
+ overflow:hidden;
+ padding-bottom: 50px;
+ background-color:#8bc34a;
+}
 </style>
 </head>
 <body>
@@ -267,7 +277,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	<img src="pix/download_appstore_small.png" width="250px">
 </div>
 <div id="div-placeholder_text" style="top: 60px;width:1000px">
-<p class="text_column" style="width: 600px; padding-left:30px;">iOS versionen av Regina är ännu inte färdig och vi gör vårt bästa för att den skall bli klar så snabbt sm möjligt. <br> Om du är grym på swift eller har andra förslag på hur vi kan bli färdiga snabbare får du gärna höra av dig och berätta om dina tankar. <a href="http://facebook.com/reginasverige" target="_blank">Kontakta Regina via FB</a>
+<p class="text_column" style="width: 600px; padding-left:30px;">iOS-versionen av Regina är ännu inte färdig och vi gör vårt bästa för att den skall bli klar så snabbt som möjligt. <br> Om du är grym på swift eller har andra förslag på hur vi kan bli färdiga snabbare får du gärna höra av dig och berätta om dina tankar. <a href="http://facebook.com/reginasverige" target="_blank">Kontakta Regina via FB</a>
 </p>
 </div>
 <div id="div-placeholder"></div>
@@ -276,7 +286,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
   <!-- More Info Section -->
 
-</div>
-<!-- Main Container Ends -->
-</body>
-</html>
+
+	<!-- Main Container Ends -->
+	<?php include_once("footer.php") ?>
+	</body>
+	</html>

@@ -323,6 +323,17 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	padding-right: 20px;
 	color: #A3A3A3;
 }
+#footer {
+ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ color: #ffffff;
+ position:relative;
+ top:50px;
+ width:100%;
+ clear:both;
+ overflow:hidden;
+ padding-bottom: 50px;
+ background-color:#8bc34a;
+}
 #faqs dt, #faqs dd { padding: 0 0 0 50px }
 #faqs dt { font-family: Arial,Gotham, Helvetica Neue;font-size:1.5em; color: #555; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
 #faqs dd { font-family: Arial,Gotham, Helvetica Neue;font-size: 1em; margin: 0 0 20px 25px}
@@ -388,13 +399,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
 
 			<div id="div-headline"></div>
-			<div id="div-headline"></div>
-			<div id="div-headline"></div>
-			<div id="div-headline"></div>
-
-  <!-- Copyrights Section -->
-
-</div>
-<!-- Main Container Ends -->
-</body>
-</html>
+		
+      <!-- Main Container Ends -->
+      <?php include_once("footer.php") ?>
+      </body>
+      </html>
