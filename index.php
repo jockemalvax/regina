@@ -245,7 +245,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	float: left;
 	padding-left: 25px;
 	padding-right: 20px;
-	color: #555;
+	color: #4c4c4c;
 }
 #faqs dt, #faqs dd { padding: 0 0 0 50px }
 #faqs dt { font-family: Arial,Gotham, Helvetica Neue;font-size:1.5em; color: #8bc34a; cursor: pointer; height: 37px; line-height: 37px; margin: 0 0 15px 25px}
