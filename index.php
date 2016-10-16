@@ -255,6 +255,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 </style>
 </head>
 <body>
+  <?php include_once("analytics.php") ?>
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
