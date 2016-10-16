@@ -11,7 +11,11 @@ ini_set('display_errors', 'on');
 <title>Läs text om din bil</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
-<link rel="icon" href="pix/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <script>
 
 $(document).ready(function(){
@@ -387,17 +391,9 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 }
 
 </style>
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body onLoad="reg_number.focus();">
+  <?php include_once("analytics.php") ?>
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
