@@ -240,18 +240,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
-	<header>
-			<a href="index.php"><h4 class="logo" style="width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
-		<div style="position:relative; left:60px; top: 18px; width: 900px; align:left;">
-
-			 <a href="read_text_with_regina.php" style="padding-right:25px;">LÄS TEXT</a>
-			 <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
-		 <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
-		 <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
-		 <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
-
-		</div>
-	</header>
+	  <?php include_once("menu.php") ?>
   <!-- Hero Section --><!-- Rotating text --><!-- Form --><!-- Why Regina section -->
 <div id="div-placeholder">
  <div id="div-greenline"></div>
@@ -268,8 +257,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
     <p id="why_reg_row"><img src="pix/Date_parking_sign.jpg" width="250px" style="padding-left:10px;"> <img id="why_reg_btn" src="pix/Thief_in_area.jpg" width="250px" style="padding-right:20px;"><img id="why_reg_btn2" src="pix/Broken_car_shield.jpg" width="250"></p>
  </div>
   <div id="div-placeholder_text">
-   <p class="text_column" style="padding-left:30px;"><a href="">Upplys!</a> Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. En del har ställt sig där medvetet men de flesta har helt enkelt glömt av att bilen står där. Gör en god gärning och skicka en påminnelse. Allt du behöver är registreringsnumret och Regina. Förutom uppskattning från medtrafikant så hjälper du staden hålla nere kostnaden för renhållning och snöröjning. Bra va?</p>
-    <p class="text_column"><a href="">Samverka!</a> Det finns en ökad medvetenhet om brott och beteende som föregår brott. Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter runt en parkeringsplats eller ett garage. Tänk på att du själv både kan ta emot och skicka information via registreringsnumret</p>
+   <p class="text_column" style="padding-left:30px;"><a href="">Upplys!</a> Det händer att man ser en felparkerad bil då dagen för snöröjning eller gatusopning är kommen. En del har ställt sig där medvetet men de flesta har helt enkelt glömt av att bilen står där. Gör en god gärning och skicka en påminnelse. Allt du behöver för att hjälpa till är registreringsnumret och Regina. Förutom uppskattning från medtrafikant så hjälper du staden hålla nere kostnaden för renhållning och snöröjning. Bra va?</p>
+    <p class="text_column"><a href="">Samverka!</a> Det finns en ökad medvetenhet om brott och beteende som föregår brott. Använd Regina som ett verktyg att upplysa varandra om misstänkta aktiviteter i ditt närområde. Via appen kan du 24/7 få information direkt till din telefon ifall något skulle hända!</p>
     <p class="text_column"><a href="">Minimera skada!</a> När din bil får en skada bör du agera skyndsamt för att undvika sekundärskador. Om du råkar ut för inbrott i bilen är det illa nog, men om det också regnar in för att du inte upptäcker den trasiga rutan blir det än värre. Vi på Regina har ännu inte lösningen att förhindra inbrottet, men följdskadorna kan minimeras om vi lättare får tag på varandra</p>
   </div>
    <!-- End Why regina section -->

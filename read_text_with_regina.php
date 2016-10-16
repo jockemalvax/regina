@@ -19,7 +19,34 @@ ini_set('display_errors', 'on');
 <script>
 
 $(document).ready(function(){
-	//$( "#get_message" ).click(function() {
+
+$( "#hamta" ).click(function() {
+  var reg_number = $("#reg_number").val();
+
+  /* write function to verify properly*/
+    if (reg_number.length>0){
+
+  $.ajax({
+            type:'POST',
+            url:'getData.php',
+            data:'reg_number='+reg_number,
+            beforeSend:function(html){
+                $("#loader").show();
+      $('#postlist').text('');
+            },
+            success:function(html){
+                $("#loader").remove();
+                $('#postlist').append(html); /* Post progress from insert function*/
+            }
+        });
+    }
+  else
+  {
+  /* Meddelande om korrekt input*/
+  }
+});
+
+  //$( "#get_message" ).click(function() {
     $(document).keypress(function(e) {
     if(e.which == 13)
 	{
@@ -236,7 +263,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	color: #8bc34a;
 	position: relative;
 	top: 40px;
-	left: 10px;
+	left: 25px;
 	width: 82%;
 	height: 25px;
 	padding-top: 5px;
@@ -332,21 +359,23 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
 .form-style-6 input[type="submit"],
 .form-style-6 input[type="button"]{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: #8bc34a;
-    border-bottom: 2px solid #8bc34a;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff;
+  font: 95% Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  padding: 2%;
+  background: #8bc34a;
+  border-bottom: 2px solid #8bc34a;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
 }
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-    background: #8bc34a;
+    background: #7bac41;
 }
 #result_box
 {
@@ -387,7 +416,11 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  top:5px;
  left:254px;
  width:100%;
-
+}
+#postlist {
+ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
+ font-size:22px;
+ color:#8bc34a;
 }
 
 </style>
@@ -397,18 +430,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
-  <header>
-      <a href="index.php"><h4 class="logo" style="width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
-    <div style="position:relative; left:60px; top: 18px; width: 900px; align:left;">
-
-       <a href="read_text_with_regina.php" style="padding-right:25px;">LÄS TEXT</a>
-       <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
-     <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
-     <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
-     <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
-
-    </div>
-  </header>
+  <?php include_once("menu.php") ?>
   <!-- Hero Section --><!-- Rotating text -->
 <div id="div-placeholder">
  <div id="div-headline-center">LÄS TEXT!</div>
@@ -420,9 +442,11 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
  	<div class="form-style-6">
 
 		<input id="reg_number" type="text" name="field1" maxlength="25" placeholder="Fyll i reg. nummer ex: ABC123" />
-		<div id="loader" style="display:none;"><img src="pix/loader.gif"></div>
+    <input id="hamta" type="submit" value="Hämta" />
 
-		<div id="postlist"></div>
+    <div id="loader" style="display:none; padding-top:25px;"><img src="pix/loader.gif"></div>
+    <!--<input id="push_message" type="submit" value="Skicka" />-->
+    <div id="postlist" style="padding-top:25px;"></div>
 
 	</div>
 </div>

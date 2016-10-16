@@ -336,18 +336,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
-	<header>
-			<a href="index.php"><h4 class="logo" style="width:50px;"><img src="pix/home.png" width="50px" height="40px"></h4></a>
-		<div style="position:relative; left:60px; top: 18px; width: 900px; align:left;">
-
-			 <a href="read_text_with_regina.php" style="padding-right:25px;">LÄS TEXT</a>
-			 <a href="send_text_to_regnumber.php" style="padding:25px;">SKICKA TEXT</a>
-		 <a href="api_functionality_regina.php" style="padding:25px;">HUR FUNKAR DET?</a>
-		 <a href="usecases_for_regina.php" style="padding:25px;">VARFÖR REGINA?</a>
-		 <a href="download_application.php" style="padding:25px;">LADDA NER APP</a>
-
-		</div>
-	</header>
+  <?php include_once("menu.php") ?>
   <!-- Hero Section --><!-- Rotating text --><!-- Form --><!-- Why Regina section -->
 <div id="div-placeholder">
  <div id="div-greenline"></div>
@@ -376,7 +365,10 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	<div id="div-placeholder_text_faq" style="padding-left:15px; padding-top:25px;">
 		<dl id="faqs">
 
-		  <dt>Jag hittar inte appen på appstore!</dt>
+      <dt name="faq">Hur får man access till API:et?</dt>
+      <dd>Kontakta oss via vår FB för att få en nyckel: <a href="http://facebook.com/reginasverige" target="_blank">API nyckel</a></dd>
+
+      <dt>Jag hittar inte appen på appstore!</dt>
 		  <dd>Appen finns för närvarande bara för Android. Vi jobbar på en iOS version med tillsvidare kan du använda webben för att skicka/lyssna!</dd>
 
 			<dt>Vem kan se vad jag skriver?</dt>
@@ -390,7 +382,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
 			<dt>Är API:et öppet för ALLA!</dt>
 		  <dd>JA! - Vi vill att alla skall använda Reginas API. Kontakta oss via vår FB för att få en nyckel: <a href="http://facebook.com/reginasverige" target="_blank">API nyckel</a></dd>
-		</dl>
+
+    </dl>
 	</div>
 
 
