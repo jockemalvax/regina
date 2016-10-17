@@ -346,9 +346,9 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   			<dt>Fungerar Regina på alla fordon?</dt>
   		  <dd>Alla fordon som har ett registreringsnummer kan använda Regina</dd>
 
-  			<dt>Är API:et öppet för ALLA!</dt>
-  		  <dd>JA! - Vi vill att alla skall använda Reginas API. Skicka mail till hej[at]reginasverige.se och begär nyckel så kommer du snabbt igång</dd>
-  		</dl>
+        <dt>App eller webb är trasig!</dt>
+  		  <dd>Sorry för detta! Kontakta oss via FB sidan och berätta så mycket som möjligt om problemet så fixar vi så snart vi hinner! Tack för du bryr dig! <a href="http://facebook.com/reginasverige" target="_blank">Rapportera bugg</a></dd>
+      </dl>
   	</div>
 
   <div id="div-headline"></div>

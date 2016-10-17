@@ -376,7 +376,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	<div id="div-placeholder_text_faq" style="padding-left:15px; padding-top:25px;">
 		<dl id="faqs">
 
-      <dt name="faq">Hur får man access till API:et?</dt>
+      <dt id="faq" name="faq">Hur får man access till API:et?</dt>
       <dd>Kontakta oss via vår FB för att få en nyckel: <a href="http://facebook.com/reginasverige" target="_blank">API nyckel</a></dd>
 
       <dt>Jag hittar inte appen på appstore!</dt>
@@ -391,15 +391,15 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 			<dt>Fungerar Regina på alla fordon?</dt>
 		  <dd>Alla fordon som har ett registreringsnummer kan använda Regina</dd>
 
-			<dt>Är API:et öppet för ALLA!</dt>
-		  <dd>JA! - Vi vill att alla skall använda Reginas API. Kontakta oss via vår FB för att få en nyckel: <a href="http://facebook.com/reginasverige" target="_blank">API nyckel</a></dd>
+			<dt>App eller webb är trasig!</dt>
+		  <dd>Sorry för detta! Kontakta oss via FB sidan och berätta så mycket som möjligt om problemet så fixar vi så snart vi hinner! Tack för du bryr dig! <a href="http://facebook.com/reginasverige" target="_blank">Rapportera bugg</a></dd>
 
     </dl>
 	</div>
 
 
 			<div id="div-headline"></div>
-		
+
       <!-- Main Container Ends -->
       <?php include_once("footer.php") ?>
       </body>

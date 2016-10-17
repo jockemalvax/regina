@@ -265,7 +265,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 
  <div id="div-placeholder">
  <p id="why_reg_row">
-	 <img src="pix/download_googleplay_small.png" width="250px">
+	 <a href="https://play.google.com/store/apps/details?id=com.regina_android.regina" target="_blank"><img src="pix/download_googleplay_small.png" width="250px"></a>
 </div>
 <div id="div-placeholder_text" style="top: 60px;width:630px;">
 <p class="text_column" style="width: 600px; padding-left:30px;">Vi har testat appen på full-HD skärmar med de senaste android versionerna. Stöter du på något problem vill vi gärna du kontaktar oss direkt så vi kan fixa problemet. <br> Du kontaktar oss snabbast via vår FB site: <a href="http://facebook.com/reginasverige" target="_blank">Kontakta Regina via FB</a>
@@ -277,7 +277,7 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
 	<img src="pix/download_appstore_small.png" width="250px">
 </div>
 <div id="div-placeholder_text" style="top: 60px;width:1000px">
-<p class="text_column" style="width: 600px; padding-left:30px;">iOS-versionen av Regina är ännu inte färdig och vi gör vårt bästa för att den skall bli klar så snabbt som möjligt. <br> Om du är grym på swift eller har andra förslag på hur vi kan bli färdiga snabbare får du gärna höra av dig och berätta om dina tankar. <a href="http://facebook.com/reginasverige" target="_blank">Kontakta Regina via FB</a>
+<p class="text_column" style="width: 600px; padding-left:30px;">iOS-versionen av Regina är ännu inte färdig och vi gör vårt bästa för att den skall bli klar så snabbt som möjligt. Om du är grym på swift eller har andra förslag på hur vi kan bli färdiga snabbare får du gärna höra av dig och berätta om dina tankar. <a href="http://facebook.com/reginasverige" target="_blank">Kontakta Regina via FB</a>
 </p>
 </div>
 <div id="div-placeholder"></div>
