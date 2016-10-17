@@ -4,12 +4,14 @@ ini_set('display_errors', 'on');
 
 if((isset($_POST["reg_number"]) && !empty($_POST["reg_number"])) && (isset($_POST["text_to_push"]) && !empty($_POST["text_to_push"]))){
 
+include('db_no_git/regina_dbConfig.php');
+$db->set_charset('utf8');
 $reg_number = strtoupper(substr($_POST["reg_number"],0,7));
-//$reg_number = mysqli_real_escape_string($db,$reg_number);
+$reg_number = mysqli_real_escape_string($db,$reg_number);
 $reg_number = strip_tags($reg_number);
 
 $text_to_push = substr($_POST["text_to_push"],0,100);
-//$text_to_push = mysqli_real_escape_string($db,$text_to_push);
+$text_to_push = mysqli_real_escape_string($db,$text_to_push);
 $text_to_push = strip_tags($text_to_push);
 
 

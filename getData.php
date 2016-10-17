@@ -6,7 +6,7 @@ if((isset($_POST["reg_number"]) && !empty($_POST["reg_number"])))
 {
 
 //Include DB configuration file
-include('../db_no_git/regina_dbConfig.php');
+include('db_no_git/regina_dbConfig.php');
 $db->set_charset('utf8');
 
 $date= new DateTime('NOW');
