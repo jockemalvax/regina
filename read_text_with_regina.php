@@ -1,14 +1,11 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-?>
 <!doctype html>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Läs text om din bil</title>
+<title>Läs text som skickats till ditt registreringsnummer</title>
+<meta name="description" content="Här kan du läsa text som skickats till ditt eller någon annans registreringsnummer. Om du använder Regina appen får du automatiskt notifikationer så snart någon skriver till de registreringsnummer du väljer att följa" />
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

@@ -1,12 +1,9 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-?>
 <!doctype html>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>Regina sverige</title>
+<title>Skicka text till bilar via registreringsnummer</title>
+<meta name="description" content="Regina möjliggör anonym kommunikation via registreringsnummer. Använd Regina när du enkelt vill skicka text till någon i relation till deras bil. Använd Regina appen för att 24/7 få pushnotifikation ifall någon kontaktar dig gällade ditt fordon" />
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

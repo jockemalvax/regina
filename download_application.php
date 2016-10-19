@@ -1,14 +1,11 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-?>
 <!doctype html>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ladda ner Reginaappen!</title>
+<title>Ladda ner Regina appen</title>
+<meta name="description" content="Med Regina appen får du notifikation till din telefon samma sekund som någon skickar en text till de registreringsnummer du följer via appen. Se till att du kan bli nådd 24/7 för information gällande dina fordon" />
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

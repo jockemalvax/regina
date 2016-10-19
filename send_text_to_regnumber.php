@@ -1,14 +1,11 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-?>
 <!doctype html>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Skicka text till registreringsnummer med Regina</title>
+<title>Skicka text till registreringsnummer</title>
+<meta name="description" content="Skicka text anonymt till valfritt registreringsnummer. Använd något av våra fördefinierade exempel eller formulera dig med fritextfunktionen som finns i Regina appen" />
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

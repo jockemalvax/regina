@@ -1,14 +1,11 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-?>
 <!doctype html>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Så här skall man använda Regina!</title>
+<title>Så här kommunicerar man via registreringsnummer</title>
+<meta name="description" content="Regina är en billig försäkring som ser till att du snabbt kan få information ifall något händer ditt fordon. Alla vill vi att bilen skall starta på morgonen. Alla vill vi undvika böter. Alla vill vi ha information om vem som repade vår bil. Det finns hur många användningsområden som helt men nyckeln i det hela är att du KAN bli nådd ifall det behövs" />
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.1.0.js"></script>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
