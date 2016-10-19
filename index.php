@@ -277,8 +277,8 @@ font-family: Arial,Gotham, Helvetica Neue, Helvetica,sans-serif;
   <div id="div-1b">
     <p id="text_row1">SKICKA TEXT TILL <br> BILÄGARE</p>
     <p id="text_row2">VIA TELEFON ELLER <br> WEBBEN</p>
-    <p id="text_row_btn"><a href="download_application.php"><img src="pix/download_googleplay.png" width="150" height="47"></a></p>
-    <p id="text_row2"><a href="api_functionality_regina.php#faq" style="color:#ffffff;">Få access till API:et!</a></p>
+    <p id="text_row_btn"><a href="ladda-ner-app-for-kommunikation-till-fordon.php"><img src="pix/download_googleplay.png" width="150" height="47"></a></p>
+    <p id="text_row2"><a href="api-for-kommunikation-till-fordon.php#faq" style="color:#ffffff;">Få access till API:et!</a></p>
   </div>
   <div id="div-1a"><img style="padding-left:75px;" src="pix/regina_android_iphone_apps.png" width="375" height="399"></div>
 </div>
